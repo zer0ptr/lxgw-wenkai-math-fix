@@ -1,0 +1,147 @@
+/*
+ * MathJax 专用修复文件
+ * MathJax Specific Fix for LXGW WenKai Font
+ */
+
+/* MathJax v2 修复 */
+/* MathJax v2 fixes */
+.MathJax {
+    font-size: 1.15em !important;
+    line-height: 1.5 !important;
+}
+
+.MathJax_Display {
+    font-size: 1.2em !important;
+    margin: 1.2em 0 !important;
+    text-align: center !important;
+}
+
+.MathJax_SVG {
+    font-size: inherit !important;
+    vertical-align: middle !important;
+}
+
+.MathJax_SVG_Display {
+    font-size: 1.2em !important;
+    margin: 1.2em auto !important;
+    text-align: center !important;
+}
+
+.MathJax_SVG svg {
+    font-size: 1.1em !important;
+    vertical-align: middle !important;
+}
+
+/* MathJax v3 修复 */
+/* MathJax v3 fixes */
+mjx-container {
+    font-size: 1.15em !important;
+    line-height: 1.5 !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+
+mjx-container[display="true"],
+mjx-container[display="block"] {
+    font-size: 1.2em !important;
+    display: block !important;
+    margin: 1.2em 0 !important;
+    text-align: center !important;
+}
+
+mjx-math {
+    font-size: inherit !important;
+    line-height: inherit !important;
+}
+
+/* MathJax 输出格式特定修复 */
+/* MathJax output format specific fixes */
+
+/* SVG 输出 */
+/* SVG output */
+mjx-container svg {
+    font-size: inherit !important;
+    vertical-align: middle !important;
+}
+
+/* HTML-CSS 输出 */
+/* HTML-CSS output */
+.MathJax_CHTML {
+    font-size: 1.15em !important;
+    line-height: 1.5 !important;
+}
+
+/* CommonHTML 输出 */
+/* CommonHTML output */
+mjx-container.MathJax {
+    font-size: 1.15em !important;
+}
+
+/* MathML 输出 */
+/* MathML output */
+math {
+    font-size: 1.15em !important;
+    line-height: 1.5 !important;
+}
+
+math[display="block"] {
+    font-size: 1.2em !important;
+    margin: 1.2em 0 !important;
+    text-align: center !important;
+}
+
+/* MathJax 预览修复 */
+/* MathJax preview fixes */
+.MathJax_Preview {
+    font-size: 1.1em !important;
+    color: #888 !important;
+}
+
+/* MathJax 错误信息修复 */
+/* MathJax error message fixes */
+.MathJax_Error {
+    font-size: 1em !important;
+    color: #cc0000 !important;
+}
+
+/* 特殊符号和操作符修复 */
+/* Special symbols and operators fixes */
+.MathJax .mo,
+.MathJax .mi,
+.MathJax .mn,
+mjx-mo,
+mjx-mi,
+mjx-mn {
+    font-size: inherit !important;
+}
+
+/* 分数和根号修复 */
+/* Fractions and radicals fixes */
+.MathJax .mfrac,
+.MathJax .msqrt,
+mjx-mfrac,
+mjx-msqrt {
+    font-size: inherit !important;
+}
+
+/* 上下标修复 */
+/* Superscript and subscript fixes */
+.MathJax .msup,
+.MathJax .msub,
+.MathJax .msubsup,
+mjx-msup,
+mjx-msub,
+mjx-msubsup {
+    font-size: inherit !important;
+}
+
+/* 矩阵和表格修复 */
+/* Matrix and table fixes */
+.MathJax .mtable,
+.MathJax .mtr,
+.MathJax .mtd,
+mjx-mtable,
+mjx-mtr,
+mjx-mtd {
+    font-size: inherit !important;
+}

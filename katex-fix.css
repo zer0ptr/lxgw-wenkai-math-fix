@@ -1,0 +1,207 @@
+/*
+ * KaTeX 专用修复文件
+ * KaTeX Specific Fix for LXGW WenKai Font
+ */
+
+/* KaTeX 基础修复 */
+/* KaTeX basic fixes */
+.katex {
+    font-size: 1.15em !important;
+    line-height: 1.5 !important;
+    font-family: 'LXGW WenKai Screen', 'KaTeX_Main', serif !important;
+}
+
+.katex-display {
+    font-size: 1.2em !important;
+    margin: 1.2em 0 !important;
+    text-align: center !important;
+    line-height: 1.6 !important;
+}
+
+/* KaTeX HTML 结构修复 */
+/* KaTeX HTML structure fixes */
+.katex-html {
+    font-size: inherit !important;
+    line-height: inherit !important;
+}
+
+.katex .base {
+    font-size: inherit !important;
+    line-height: inherit !important;
+}
+
+.katex .strut {
+    font-size: inherit !important;
+}
+
+/* KaTeX 数学元素修复 */
+/* KaTeX math elements fixes */
+.katex .mord,
+.katex .mop,
+.katex .mbin,
+.katex .mrel,
+.katex .mopen,
+.katex .mclose,
+.katex .mpunct,
+.katex .minner {
+    font-size: inherit !important;
+}
+
+/* KaTeX 字体族修复 */
+/* KaTeX font family fixes */
+.katex .mathdefault {
+    font-family: 'LXGW WenKai Screen', 'KaTeX_Main', serif !important;
+    font-size: inherit !important;
+}
+
+.katex .mathit {
+    font-family: 'LXGW WenKai Screen', 'KaTeX_Math', serif !important;
+    font-size: inherit !important;
+}
+
+.katex .mathrm {
+    font-family: 'LXGW WenKai Screen', 'KaTeX_Main', serif !important;
+    font-size: inherit !important;
+}
+
+.katex .mathbf {
+    font-family: 'LXGW WenKai Screen', 'KaTeX_Main', serif !important;
+    font-weight: bold !important;
+    font-size: inherit !important;
+}
+
+.katex .mathcal {
+    font-family: 'LXGW WenKai Screen', 'KaTeX_Caligraphic', serif !important;
+    font-size: inherit !important;
+}
+
+.katex .mathfrak {
+    font-family: 'LXGW WenKai Screen', 'KaTeX_Fraktur', serif !important;
+    font-size: inherit !important;
+}
+
+.katex .mathtt {
+    font-family: 'LXGW WenKai Screen', 'KaTeX_Typewriter', monospace !important;
+    font-size: inherit !important;
+}
+
+.katex .mathsf {
+    font-family: 'LXGW WenKai Screen', 'KaTeX_SansSerif', sans-serif !important;
+    font-size: inherit !important;
+}
+
+/* KaTeX 分数修复 */
+/* KaTeX fractions fixes */
+.katex .frac-line {
+    border-bottom-width: 0.04em !important;
+}
+
+.katex .frac .frac-line {
+    border-bottom-width: 0.04em !important;
+}
+
+.katex .mfrac {
+    font-size: inherit !important;
+}
+
+/* KaTeX 根号修复 */
+/* KaTeX radicals fixes */
+.katex .sqrt {
+    font-size: inherit !important;
+}
+
+.katex .sqrt > .root {
+    font-size: 0.7em !important;
+}
+
+/* KaTeX 上下标修复 */
+/* KaTeX superscript and subscript fixes */
+.katex .msupsub {
+    font-size: inherit !important;
+}
+
+.katex .msupsub > .vlist-t {
+    font-size: inherit !important;
+}
+
+.katex .msupsub .sizing {
+    font-size: inherit !important;
+}
+
+/* KaTeX 大型操作符修复 */
+/* KaTeX large operators fixes */
+.katex .op-symbol {
+    font-size: inherit !important;
+}
+
+.katex .op-limits {
+    font-size: inherit !important;
+}
+
+/* KaTeX 矩阵修复 */
+/* KaTeX matrix fixes */
+.katex .arraycolsep {
+    width: 0.5em !important;
+}
+
+.katex .mtable {
+    font-size: inherit !important;
+}
+
+.katex .mtable .arraycolsep {
+    width: 0.5em !important;
+}
+
+/* KaTeX 括号修复 */
+/* KaTeX delimiters fixes */
+.katex .delimsizing {
+    font-size: inherit !important;
+}
+
+.katex .delim-size1,
+.katex .delim-size2,
+.katex .delim-size3,
+.katex .delim-size4 {
+    font-size: inherit !important;
+}
+
+/* KaTeX 重音符号修复 */
+/* KaTeX accents fixes */
+.katex .accent {
+    font-size: inherit !important;
+}
+
+.katex .accent > .vlist-t {
+    font-size: inherit !important;
+}
+
+/* KaTeX 颜色修复 */
+/* KaTeX color fixes */
+.katex .textcolor {
+    font-size: inherit !important;
+}
+
+.katex .colorbox {
+    font-size: inherit !important;
+}
+
+/* KaTeX 间距修复 */
+/* KaTeX spacing fixes */
+.katex .mspace {
+    font-size: inherit !important;
+}
+
+.katex .quad,
+.katex .qquad {
+    font-size: inherit !important;
+}
+
+/* KaTeX 错误处理 */
+/* KaTeX error handling */
+.katex-error {
+    font-size: 1em !important;
+    color: #cc0000 !important;
+    border: 1px solid #cc0000 !important;
+    padding: 2px 4px !important;
+    border-radius: 3px !important;
+}

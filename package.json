@@ -1,0 +1,46 @@
+{
+  "name": "lxgw-wenkai-math-fix",
+  "version": "1.0.0",
+  "description": "CSS修复文件，解决霞鹜文楷字体在数学公式中显示过小的问题",
+  "main": "lxgw-wenkai-math-fix.css",
+  "scripts": {
+    "test": "echo \"请在浏览器中打开 test.html 文件来测试修复效果\" && exit 0",
+    "serve": "python -m http.server 8000 || python3 -m http.server 8000",
+    "start": "npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/lxgw-wenkai-math-fix.git"
+  },
+  "keywords": [
+    "lxgw-wenkai",
+    "font",
+    "math",
+    "formula",
+    "mathjax",
+    "katex",
+    "css",
+    "fix",
+    "hexo",
+    "blog",
+    "chinese-font"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/your-username/lxgw-wenkai-math-fix/issues"
+  },
+  "homepage": "https://github.com/your-username/lxgw-wenkai-math-fix#readme",
+  "files": [
+    "lxgw-wenkai-math-fix.css",
+    "mathjax-fix.css",
+    "katex-fix.css",
+    "README.md",
+    "test.html"
+  ],
+  "devDependencies": {},
+  "peerDependencies": {},
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
