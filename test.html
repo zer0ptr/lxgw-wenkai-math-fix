@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>霞鹜文楷数学公式修复测试</title>
+    
+    <!-- 引入霞鹜文楷字体 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.7.0/style.min.css">
+    
+    <!-- 引入修复CSS -->
+    <link rel="stylesheet" href="./lxgw-wenkai-math-fix.css">
+    
+    <!-- MathJax 配置和引入 -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <!-- KaTeX 引入 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+    
+    <style>
+        body {
+            font-family: 'LXGW WenKai Screen', serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fafafa;
+        }
+        
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1, h2 {
+            color: #333;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        
+        .test-section {
+            margin: 30px 0;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        
+        .before-after {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .before, .after {
+            padding: 15px;
+            border-radius: 5px;
+        }
+        
+        .before {
+            background-color: #ffe6e6;
+            border-left: 4px solid #ff4444;
+        }
+        
+        .after {
+            background-color: #e6ffe6;
+            border-left: 4px solid #44ff44;
+        }
+        
+        .katex-content {
+            margin: 20px 0;
+        }
+        
+        @media (max-width: 600px) {
+            .before-after {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>霞鹜文楷数学公式修复测试页面</h1>
+        
+        <p>这个页面用于测试霞鹜文楷字体在数学公式中的显示效果。页面包含了 MathJax 和 KaTeX 的各种数学公式示例。</p>
+        
+        <div class="test-section">
+            <h2>MathJax 测试</h2>
+            
+            <h3>行内公式测试</h3>
+            <p>这是一段包含行内公式的文本：爱因斯坦的质能方程 $E = mc^2$ 是物理学中最著名的公式之一。另一个重要的公式是欧拉恒等式 $e^{i\pi} + 1 = 0$，它被称为数学中最美的公式。</p>
+            
+            <h3>块级公式测试</h3>
+            <p>以下是一些块级数学公式：</p>
+            
+            <p>二次方程的解：</p>
+            $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+            
+            <p>积分公式：</p>
+            $$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$
+            
+            <p>矩阵表示：</p>
+            $$\begin{pmatrix}
+            a & b \\
+            c & d
+            \end{pmatrix}
+            \begin{pmatrix}
+            x \\
+            y
+            \end{pmatrix}
+            =
+            \begin{pmatrix}
+            ax + by \\
+            cx + dy
+            \end{pmatrix}$$
+            
+            <p>求和公式：</p>
+            $$\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}$$
+        </div>
+        
+        <div class="test-section">
+            <h2>KaTeX 测试</h2>
+            
+            <div class="katex-content">
+                <h3>行内公式测试</h3>
+                <p>这是使用 KaTeX 渲染的行内公式：勾股定理 <span class="katex-inline">a^2 + b^2 = c^2</span> 和圆的面积公式 <span class="katex-inline">A = \pi r^2</span>。</p>
+                
+                <h3>块级公式测试</h3>
+                <p>泰勒级数展开：</p>
+                <div class="katex-display">
+                    f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \frac{f'''(a)}{3!}(x-a)^3 + \cdots
+                </div>
+                
+                <p>傅里叶变换：</p>
+                <div class="katex-display">
+                    F(\omega) = \int_{-\infty}^{\infty} f(t) e^{-i\omega t} dt
+                </div>
+                
+                <p>分数和根号：</p>
+                <div class="katex-display">
+                    \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+                </div>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h2>混合测试</h2>
+            <p>这段文本同时包含了 MathJax 和 KaTeX 公式。MathJax 公式：$\sin^2(x) + \cos^2(x) = 1$，KaTeX 公式：<span class="katex-inline">\lim_{x \to 0} \frac{\sin x}{x} = 1</span>。</p>
+            
+            <p>复杂的数学表达式：</p>
+            $$\oint_{\partial D} \omega = \int\int_D d\omega$$
+            
+            <div class="katex-display">
+                \nabla \times \vec{F} = \left( \frac{\partial F_z}{\partial y} - \frac{\partial F_y}{\partial z} \right) \hat{i} + \left( \frac{\partial F_x}{\partial z} - \frac{\partial F_z}{\partial x} \right) \hat{j} + \left( \frac{\partial F_y}{\partial x} - \frac{\partial F_x}{\partial y} \right) \hat{k}
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h2>字体大小对比</h2>
+            <p>正常文本的字体大小。这是用于对比的普通文本，可以看出数学公式与正文的字体大小是否协调。</p>
+            <p>行内数学公式：$f(x) = ax^2 + bx + c$ 应该与周围文本大小协调。</p>
+            <p>块级数学公式应该稍大一些以便阅读：</p>
+            $$\int_0^1 x^2 dx = \frac{1}{3}$$
+        </div>
+    </div>
+    
+    <script>
+        // KaTeX 自动渲染
+        document.addEventListener("DOMContentLoaded", function() {
+            // 渲染 KaTeX 行内公式
+            const inlineElements = document.querySelectorAll('.katex-inline');
+            inlineElements.forEach(element => {
+                katex.render(element.textContent, element, {
+                    throwOnError: false,
+                    displayMode: false
+                });
+            });
+            
+            // 渲染 KaTeX 块级公式
+            const displayElements = document.querySelectorAll('.katex-display');
+            displayElements.forEach(element => {
+                katex.render(element.textContent, element, {
+                    throwOnError: false,
+                    displayMode: true
+                });
+            });
+        });
+    </script>
+</body>
+</html>
